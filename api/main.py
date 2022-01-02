@@ -12,12 +12,11 @@ router = APIRouter()
 def init_root():
     return "message: Visualización de datos Covid 19"
     
-## POPULATION BY AGE 
 
 @router.get("/country_covid")
 def country_covid():
     query = f"""
-        SELECT Country, 
+        SELECT Country 
         FROM confirmed
         ;
     """

@@ -1,192 +1,193 @@
-0,Afganistán ,3 
-1,Albania ,168 
-2,Alemania ,4.273 
-3,Andorra ,1.754 
-4,Angola ,47 
-5,Antigua y Barbuda ,281 
-6,Arabia Saudita ,703 
-7,Argelia ,151 
-8,Argentina ,849 
-9,Armenia ,48 
-10,Australia ,3.143 
-11,Austria ,3.704 
-12,Azerbaiyán ,37 
-13,Bahamas ,688 
-14,Bangladés ,5 
-15,Barbados ,463 
-16,Baréin ,578 
-17,Belice ,169 
-18,Benín ,8 
-19,Bielorrusia ,212 
-20,Birmania - Myanmar ,8 
-21,Bolivia ,134 
-22,Bosnia y Herzegovina ,287 
-23,Botsuana ,312 
-24,Brasil ,349 
-25,Brunéi ,564 
-26,Bulgaria ,379 
-27,Burkina Faso ,17 
-28,Burundi ,5 
-29,Bután ,64 
-30,Bélgica ,3.393 
-31,Cabo Verde ,89 
-32,Camboya ,17 
-33,Camerún ,8 
-34,Canadá ,3.149 
-35,Catar ,1.179 
-36,Chad ,4 
-37,Chile ,670 
-38,China ,240 
-39,Chipre ,1.001 
-40,Colombia ,343 
-41,Comoras ,7 
-42,Corea del Norte ,13 
-43,Corea del Sur ,1.438 
-44,Costa Rica ,607 
-45,Costa de Marfil ,18 
-46,Croacia ,762 
-47,Cuba ,782 
-48,Dinamarca ,4.762 
-49,Dominica ,253 
-50,Ecuador ,242 
-51,Egipto ,31 
-52,El Salvador ,159 
-53,Emiratos Árabes Unidos ,865 
-54,Eritrea ,8 
-55,Eslovaquia ,1.065 
-56,Eslovenia ,1.613 
-57,España ,1.703 
-58,Estados Federados de Micronesia ,97 
-59,Estados Unidos ,8.087 
-60,Estonia ,1.287 
-61,Etiopía ,6 
-62,Filipinas ,38 
-63,Finlandia ,3.214 
-64,Fiyi ,110 
-65,Francia ,3.355 
-66,Gabón ,115 
-67,Gambia ,5 
-68,Georgia ,97 
-69,Ghana ,20 
-70,Granada ,188 
-71,Grecia ,801 
-72,Guatemala ,82 
-73,Guinea ,5 
-74,Guinea Ecuatorial ,50 
-75,Guinea-Bisáu ,4 
-76,Guyana ,122 
-77,Haiti ,7 
-78,Honduras ,70 
-79,Hungría ,649 
-80,India ,17 
-81,Indonesia ,48 
-82,Irak ,78 
-83,Irlanda ,4.093 
-84,Irán ,216 
-85,Islandia ,4.295 
-86,Islas Marshall ,215 
-87,Islas Salomón ,64 
-88,Israel ,1.882 
-89,Italia ,2.052 
-90,Jamaica ,176 
-91,Japón ,3.322 
-92,Jordania ,135 
-93,Kazajistán ,154 
-94,Kenia ,29 
-95,Kirguistán ,26 
-96,Kiribati ,115 
-97,Kuwait ,1.183 
-98,Laos ,19 
-99,Lesoto ,58 
-100,Letonia ,636 
-101,Liberia ,9 
-102,Libia ,142 
-103,Lituania ,879 
-104,Luxemburgo ,4.674 
-105,Líbano ,319 
-106,Macedonia del Norte ,196 
-107,Madagascar ,10 
-108,Malasia ,172 
-109,Malaui ,9 
-110,Maldivas ,637 
-111,Malta ,1.454 
-112,Malí ,10 
-113,Marruecos ,61 
-114,Mauricio ,228 
-115,Mauritania ,17 
-116,Moldavia ,86 
-117,Mongolia ,81 
-118,Montenegro ,360 
-119,Mozambique ,6 
-120,México ,232 
-121,Mónaco ,2.069 
-122,Namibia ,183 
-123,Nauru ,705 
-124,Nepal ,9 
-125,Nicaragua ,99 
-126,Nigeria ,9 
-127,Noruega ,5.777 
-128,Nueva Zelanda ,2.758 
-129,Níger ,9 
-130,Omán ,456 
-131,Pakistán ,12 
-132,Palaos ,715 
-133,Panamá ,590 
-134,Papúa Nueva Guinea ,41 
-135,Paraguay ,153 
-136,Países Bajos ,4.352 
-137,Perú ,187 
-138,Polonia ,720 
-139,Portugal ,1.295 
-140,Reino Unido ,3.685 
-141,República Centroafricana ,3 
-142,República Checa ,1.486 
-143,República Democrática del Congo ,2 
-144,República Dominicana ,176 
-145,República del Congo ,18 
-146,Ruanda ,15 
-147,Rumanía ,532 
-148,Rusia ,355 
-149,Samoa ,154 
-150,San Cristóbal y Nieves ,372 
-151,San Marino ,2.430 
-152,San Vicente y las Granadinas ,183 
-153,Santa Lucía ,199 
-154,Santo Tomé y Príncipe ,48 
-155,Senegal ,10 
-156,Serbia ,265 
-157,Seychelles ,512 
-158,Sierra Leona ,8 
-159,Singapur ,1.117 
-160,Siria ,25 
-161,Somalia ,3 
-162,Sri Lanka ,61 
-163,Suazilandia ,101 
-164,Sudáfrica ,192 
-165,Sudán ,31 
-166,Sudán del Sur ,2 
-167,Suecia ,4.454 
-168,Suiza ,5.745 
-169,Surinam ,176 
-170,Tailandia ,166 
-171,Tanzania ,13 
-172,Tayikistán ,15 
-173,Timor Oriental ,49 
-174,Togo ,6 
-175,Tonga ,115 
-176,Trinidad y Tobago ,529 
-177,Turkmenistán ,90 
-178,Turquía ,279 
-179,Tuvalu ,400 
-180,Túnez ,127 
-181,Ucrania ,69 
-182,Uganda ,5 
-183,Uruguay ,998 
-184,Uzbekistán ,38 
-185,Vanuatu ,58 
-186,Venezuela ,13 
-187,Vietnam ,56 
-188,Yemen ,7 
-189,Yibuti ,29 
-190,Zambia ,23 
-191,Zimbabue ,50 
+Country,Public spending per capita
+Afganistán ,3 
+Albania ,168 
+Alemania ,4.273 
+Andorra ,1.754 
+Angola ,47 
+Antigua y Barbuda ,281 
+Arabia Saudita ,703 
+Argelia ,151 
+Argentina ,849 
+Armenia ,48 
+Australia ,3.143 
+Austria ,3.704 
+Azerbaiyán ,37 
+Bahamas ,688 
+Bangladés ,5 
+Barbados ,463 
+Baréin ,578 
+Belice ,169 
+Benín ,8 
+Bielorrusia ,212 
+Birmania - Myanmar ,8 
+Bolivia ,134 
+Bosnia y Herzegovina ,287 
+Botsuana ,312 
+Brasil ,349 
+Brunéi ,564 
+Bulgaria ,379 
+Burkina Faso ,17 
+Burundi ,5 
+Bután ,64 
+Bélgica ,3.393 
+Cabo Verde ,89 
+Camboya ,17 
+Camerún ,8 
+Canadá ,3.149 
+Catar ,1.179 
+Chad ,4 
+Chile ,670 
+China ,240 
+Chipre ,1.001 
+Colombia ,343 
+Comoras ,7 
+Corea del Norte ,13 
+Corea del Sur ,1.438 
+Costa Rica ,607 
+Costa de Marfil ,18 
+Croacia ,762 
+Cuba ,782 
+Dinamarca ,4.762 
+Dominica ,253 
+Ecuador ,242 
+Egipto ,31 
+El Salvador ,159 
+Emiratos Árabes Unidos ,865 
+Eritrea ,8 
+Eslovaquia ,1.065 
+Eslovenia ,1.613 
+España ,1.703 
+Estados Federados de Micronesia ,97 
+Estados Unidos ,8.087 
+Estonia ,1.287 
+Etiopía ,6 
+Filipinas ,38 
+Finlandia ,3.214 
+Fiyi ,110 
+Francia ,3.355 
+Gabón ,115 
+Gambia ,5 
+Georgia ,97 
+Ghana ,20 
+Granada ,188 
+Grecia ,801 
+Guatemala ,82 
+Guinea ,5 
+Guinea Ecuatorial ,50 
+Guinea-Bisáu ,4 
+Guyana ,122 
+Haiti ,7 
+Honduras ,70 
+Hungría ,649 
+India ,17 
+Indonesia ,48 
+Irak ,78 
+Irlanda ,4.093 
+Irán ,216 
+Islandia ,4.295 
+Islas Marshall ,215 
+Islas Salomón ,64 
+Israel ,1.882 
+Italia ,2.052 
+Jamaica ,176 
+Japón ,3.322 
+Jordania ,135 
+Kazajistán ,154 
+Kenia ,29 
+Kirguistán ,26 
+Kiribati ,115 
+Kuwait ,1.183 
+Laos ,19 
+Lesoto ,58 
+Letonia ,636 
+Liberia ,9 
+Libia ,142 
+Lituania ,879 
+Luxemburgo ,4.674 
+Líbano ,319 
+Macedonia del Norte ,196 
+Madagascar ,10 
+Malasia ,172 
+Malaui ,9 
+Maldivas ,637 
+Malta ,1.454 
+Malí ,10 
+Marruecos ,61 
+Mauricio ,228 
+Mauritania ,17 
+Moldavia ,86 
+Mongolia ,81 
+Montenegro ,360 
+Mozambique ,6 
+México ,232 
+Mónaco ,2.069 
+Namibia ,183 
+Nauru ,705 
+Nepal ,9 
+Nicaragua ,99 
+Nigeria ,9 
+Noruega ,5.777 
+Nueva Zelanda ,2.758 
+Níger ,9 
+Omán ,456 
+Pakistán ,12 
+Palaos ,715 
+Panamá ,590 
+Papúa Nueva Guinea ,41 
+Paraguay ,153 
+Países Bajos ,4.352 
+Perú ,187 
+Polonia ,720 
+Portugal ,1.295 
+Reino Unido ,3.685 
+República Centroafricana ,3 
+República Checa ,1.486 
+República Democrática del Congo ,2 
+República Dominicana ,176 
+República del Congo ,18 
+Ruanda ,15 
+Rumanía ,532 
+Rusia ,355 
+Samoa ,154 
+San Cristóbal y Nieves ,372 
+San Marino ,2.430 
+San Vicente y las Granadinas ,183 
+Santa Lucía ,199 
+Santo Tomé y Príncipe ,48 
+Senegal ,10 
+Serbia ,265 
+Seychelles ,512 
+Sierra Leona ,8 
+Singapur ,1.117 
+Siria ,25 
+Somalia ,3 
+Sri Lanka ,61 
+Suazilandia ,101 
+Sudáfrica ,192 
+Sudán ,31 
+Sudán del Sur ,2 
+Suecia ,4.454 
+Suiza ,5.745 
+Surinam ,176 
+Tailandia ,166 
+Tanzania ,13 
+Tayikistán ,15 
+Timor Oriental ,49 
+Togo ,6 
+Tonga ,115 
+Trinidad y Tobago ,529 
+Turkmenistán ,90 
+Turquía ,279 
+Tuvalu ,400 
+Túnez ,127 
+Ucrania ,69 
+Uganda ,5 
+Uruguay ,998 
+Uzbekistán ,38 
+Vanuatu ,58 
+Venezuela ,13 
+Vietnam ,56 
+Yemen ,7 
+Yibuti ,29 
+Zambia ,23 
+Zimbabue ,50 
