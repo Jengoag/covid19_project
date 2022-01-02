@@ -1,6 +1,8 @@
 import streamlit as st
 from PIL import Image
 import datetime
+import graphs
+import card
 
 
 ################### title 
@@ -18,8 +20,14 @@ st.markdown("""
 ###################  SIDEBAR PRINCIPAL
 st.sidebar.title('Selecciona tus preferencias ')
 
+###################  SIDEBAR MODE
+option=st.sidebar.selectbox('Modo',('Casos','Fallecidos', 'Recuperados'))
+
+
 ###################  SIDEBAR COUNTRY
-option=st.sidebar.selectbox('Pais',('Mundial','Alemania', 'España'))
+option=st.sidebar.selectbox('Pais',('Mundial','Alemania', 'España')) #######Hay que poner la lista de paises mas la global
+
+
 
 ###################  SIDEBAR START DATE AND END DATE
 
