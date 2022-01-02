@@ -1,41 +1,26 @@
 from fastapi import FastAPI
+from fastapi import APIRouter
+from bson import json_util
+from json import loads
+from database.sql import db
 
-app = FastAPI()
+router = APIRouter()
 
 # endpoint de inicio 
-@app.get("/")
-def root():
-    return {"Holi!"}
 
-@app.get("/covid")
-def root():
-    return {"Fucking Covid"}
+@router.get("/")
+def init_root():
+    return "message: Visualización de datos Covid 19"
+    
+## POPULATION BY AGE 
 
+@router.get("/country_covid")
+def country_covid():
+    query = f"""
+        SELECT Country, 
+        FROM confirmed
+        ;
+    """
+    result = db.execute(query).fetchall()
 
-
-@app.post("/")
-def root():
-    return {"request":"POST"}
-
-
-@app.get("/hello/{name}")
-def salute(name):
-    return {"message":f"Hello, {name}"}
-
-@app.get("/person/{name}/{age}")
-def person(name: str, age: int):
-    item = {
-        "name" : {
-            "value": name,
-            "type": str(type(name))
-        },
-        "age" : {
-            "value": age,
-            "type": str(type(age))
-        }
-    }
-    return item
-
-@app.get("/sum")
-def suma(a:int=0, b:int=0):
-    return {"result":a+b}
+    return loads(json_util.dumps(result))
