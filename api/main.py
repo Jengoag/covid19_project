@@ -12,12 +12,12 @@ router = APIRouter()
 def init_root():
     return "message: Visualización de datos Covid 19"
     
-
-@router.get("/country_covid")
-def country_covid():
+@router.get("/global_map")
+def global_map():
     query = f"""
-        SELECT Country 
-        FROM confirmed
+        SELECT country, lat, lon
+        FROM geolocation
+        WHERE country like 'Albania'
         ;
     """
     result = db.execute(query).fetchall()

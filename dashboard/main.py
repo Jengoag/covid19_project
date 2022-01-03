@@ -2,7 +2,7 @@ import streamlit as st
 from PIL import Image
 import datetime
 import graphs
-import card
+
 
 
 ################### title 
@@ -27,7 +27,7 @@ option=st.sidebar.selectbox('Modo',('Casos','Fallecidos', 'Recuperados'))
 ###################  SIDEBAR COUNTRY
 option=st.sidebar.selectbox('Pais',('Mundial','Alemania', 'España')) #######Hay que poner la lista de paises mas la global
 
-
+###graphs.get_graph_by_country(option)
 
 ###################  SIDEBAR START DATE AND END DATE
 
@@ -37,10 +37,9 @@ tomorrow = today + datetime.timedelta(days=1)
 start_date = st.sidebar.date_input('Fecha inicial', today)
 end_date = st.sidebar.date_input('Fecha final', tomorrow)
 
+###################  MAP LOCATION
 
-
-
-
+graphs.get_global_map()
 
 
 
