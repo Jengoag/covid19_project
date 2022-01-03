@@ -17,7 +17,17 @@ def global_map():
     query = f"""
         SELECT country, lat, lon
         FROM geolocation
-        WHERE country like 'Albania'
+        ;
+    """
+    result = db.execute(query).fetchall()
+
+    return loads(json_util.dumps(result))
+
+@router.get("/countries")
+def countries():
+    query = f"""
+        SELECT country
+        FROM geolocation
         ;
     """
     result = db.execute(query).fetchall()

@@ -21,15 +21,18 @@ st.markdown("""
 st.sidebar.title('Selecciona tus preferencias ')
 
 ###################  SIDEBAR MODE
-option=st.sidebar.selectbox('Modo',('Casos','Fallecidos', 'Recuperados'))
+option=st.sidebar.selectbox('Modo',('Contagios','Fallecidos', 'Recuperados'))
 
-
+ 
 ###################  SIDEBAR COUNTRY
-option=st.sidebar.selectbox('Pais',('Mundial','Alemania', 'España')) #######Hay que poner la lista de paises mas la global
+country_names_list = [d['country'] for d in graphs.get_countries()]
+country_names_list.insert(0,'Mundial')
 
-###graphs.get_graph_by_country(option)
+option=st.sidebar.selectbox('Pais', country_names_list)
 
-###################  SIDEBAR START DATE AND END DATE
+####graphs.get_graph_by_country(option) 
+
+""" ###################  SIDEBAR START DATE AND END DATE
 
 today = datetime.date.today()
 tomorrow = today + datetime.timedelta(days=1)
@@ -39,14 +42,11 @@ end_date = st.sidebar.date_input('Fecha final', tomorrow)
 
 ###################  MAP LOCATION
 
-graphs.get_global_map()
+graphs.get_global_map() """
 
 
-
-
-
-###################  SUCCESS OR ERROR DATA
+""" ###################  SUCCESS OR ERROR DATA
 if start_date < end_date:
     st.success('Fecha inicial: `%s`\n\nFecha final:`%s`' % (start_date, end_date))
 else:
-    st.error('Error: End date must fall after start date.')
+    st.error('Error: End date must fall after start date.') """ 

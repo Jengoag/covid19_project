@@ -17,7 +17,9 @@ def get_global_map():
 
 ##################
 
-
+def get_countries():
+    result = requests.get("http://localhost:8000/countries").json()
+    return result
 
 
 
