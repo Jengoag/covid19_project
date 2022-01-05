@@ -15,7 +15,7 @@ def init_root():
 @router.get("/global_map")
 def global_map():
     query = f"""
-        SELECT country, lat, lon
+        SELECT "Country", lat, lon
         FROM geolocation
         ;
     """
@@ -23,13 +23,13 @@ def global_map():
 
     return loads(json_util.dumps(result))
 
-@router.get("/countries")
+""" @router.get("/countries")
 def countries():
     query = f"""
-        SELECT country
-        FROM geolocation
-        ;
+ #       SELECT country
+ #       FROM geolocation
+  #      ;
     """
     result = db.execute(query).fetchall()
 
-    return loads(json_util.dumps(result))
+    return loads(json_util.dumps(result)) """
