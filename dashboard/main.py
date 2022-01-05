@@ -21,14 +21,14 @@ st.markdown("""
 st.sidebar.title('Selecciona tus preferencias ')
 
 ###################  SIDEBAR MODE
-option=st.sidebar.selectbox('Modo',('Contagios','Fallecidos', 'Recuperados'))
+option=st.sidebar.selectbox('Information',('Confirmed','Deaths', 'Recovered'))
 
  
 ###################  SIDEBAR COUNTRY
-country_names_list = [d['country'] for d in graphs.get_countries()]
-country_names_list.insert(0,'Mundial')
+country_names_list = [d['Country'] for d in graphs.get_countries()]
+country_names_list.insert(0,'Worldwide')
 
-option=st.sidebar.selectbox('Pais', country_names_list)
+option=st.sidebar.selectbox('Country', country_names_list)
 
 ####graphs.get_graph_by_country(option) 
 
