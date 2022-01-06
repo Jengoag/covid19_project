@@ -1,16 +1,16 @@
-from api_requests import get_countries_names, get_result_total, get_geolocation 
+from api_requests import get_countries_names, get_result_total, get_geolocation
 from visual import visual_countries, geolocation_map
 import streamlit as st
 
 
 def world_comparison():
     countries = get_countries_names()
-    option = st.multiselect('Countries', countries)
+    countries.insert(0, "Worldwide")
+    options = st.multiselect('Countries', countries)
 
-    if option:
-        data_total = get_result_total(option)
-        visual_countries(option, data_total)
-
-    
-
-
+    if options:
+        data_total = get_result_total()
+        if "Worldwide" in options:
+            visual_countries(countries[1:], data_total)
+        else:
+            visual_countries(options, data_total)

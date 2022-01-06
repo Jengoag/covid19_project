@@ -6,7 +6,7 @@ def get_countries_names():
     c_names = [country["Country"] for country in result_country_names]
     return list(c_names)
     
-def get_result_total(countries):
+def get_result_total():
     result_total = requests.get("http://localhost:8000/result_total").json()
     return result_total
 
