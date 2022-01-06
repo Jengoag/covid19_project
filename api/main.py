@@ -5,30 +5,47 @@ from api.data_cleaning.db.connection import db
 
 router = APIRouter()
 
-# endpoint de inicio 
-
 @router.get("/")
-def init_root():
-    return "message: Visualización de datos Covid 19"
-    
-@router.get("/global_map")
-def global_map():
+def init():
+    return "<p>Covid-19</p>"
+
+
+@router.get("/countries_names")
+def countries_names():
     query = f"""
-        SELECT "Country", lat, lon
+        SELECT "Country"
         FROM geolocation
         ;
     """
     result = db.execute(query).fetchall()
 
     return loads(json_util.dumps(result))
- 
-@router.get("/countries")
-def countries():
+
+
+@router.get("/result_total")
+def result_total():
     query = f"""
-       SELECT "Country"
-       FROM geolocation
-      ;
+        SELECT confirmed."Country", confirmed."Occurrence" AS confirmed, deaths."Occurrence" as deaths, recovered."Occurrence" as recovered
+        FROM confirmed
+        INNER JOIN deaths
+        ON confirmed."Country" = deaths."Country"
+        INNER JOIN recovered
+        ON confirmed."Country" = recovered."Country"
+        WHERE confirmed."Date" = '1/22/21' and deaths."Date" = '1/22/21' and recovered."Date" = '1/22/21';
     """
     result = db.execute(query).fetchall()
 
-    return loads(json_util.dumps(result)) 
+    return loads(json_util.dumps(result))
+
+@router.get("/geolocation")
+def geolocation():
+    query = f"""
+        SELECT "Country", lat, lon
+        FROM geolocation
+    """
+    result = db.execute(query).fetchall()
+
+    return loads(json_util.dumps(result))
+
+
+
