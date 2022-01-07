@@ -10,7 +10,10 @@ def get_result_total():
     result_total = requests.get("http://localhost:8000/result_total").json()
     return result_total
 
-def get_geolocation(countries):
-    result_geolocation = requests.get("http://localhost:8000//geolocation").json()
+def get_geolocation():
+    result_geolocation = requests.get("http://localhost:8000/geolocation").json()
     return result_geolocation
-    
+
+def progression_total():
+    result_progression_total = requests.get("http://localhost:8000/progression_total").json()
+    return result_progression_total

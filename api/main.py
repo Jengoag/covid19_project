@@ -48,4 +48,21 @@ def geolocation():
     return loads(json_util.dumps(result))
 
 
+@router.get("/progression_total")
+def progression_total():
+    query = f"""
+        SELECT confirmed."Country", confirmed."Occurrence" AS confirmed , deaths."Occurrence" AS deaths,recovered."Occurrence" AS recovered, confirmed."Date"
+        FROM confirmed
+        INNER JOIN deaths
+        ON confirmed."Country" = deaths."Country" AND confirmed."Date" = deaths."Date"
+        INNER JOIN recovered
+        ON confirmed."Country" = recovered."Country" AND confirmed."Date" = recovered."Date"
+        ORDER BY confirmed."Country" 
+    """
+    result = db.execute(query).fetchall()
+
+    return loads(json_util.dumps(result))
+    
+
+
 
