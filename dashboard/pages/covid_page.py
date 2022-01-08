@@ -13,11 +13,14 @@ def world_comparison():
         data_total = get_result_total()
         if "Worldwide" in options:
             visual_countries(countries[1:], data_total)
+            plt = progression_total_graph(progression_total(), countries[1:])
+            st.pyplot(plt)
         else:
             visual_countries(options, data_total)
+            plt = progression_total_graph(progression_total(), options)
+            st.pyplot(plt)
+   
 
-    plt = progression_total_graph(progression_total(), options)
-    print(plt)
-    st.pyplot(plt)
+    
 
 
