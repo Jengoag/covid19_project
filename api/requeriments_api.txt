@@ -1,4 +1,0 @@
-from fastapi import FastAPI
-install fastapi
-install "uvicorn[standard]"
-

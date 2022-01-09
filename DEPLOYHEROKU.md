@@ -113,7 +113,7 @@ if postgres_url and postgres_url.startswith("postgres://"):
 - `$ pipreqs.pipreqs ./streamlit`
 - Procfile
 
-  - `web: sh setup.sh && streamlit run app.py`
+  - `web: sh setup.sh && streamlit run dashboard/main.py`
 
 - crear archivo `setup.sh`
 

@@ -57,7 +57,7 @@ def progression_total():
         ON confirmed."Country" = deaths."Country" AND confirmed."Date" = deaths."Date"
         INNER JOIN recovered
         ON confirmed."Country" = recovered."Country" AND confirmed."Date" = recovered."Date"
-        ORDER BY confirmed."Country" 
+        ORDER BY confirmed."Occurrence" 
     """
     result = db.execute(query).fetchall()
 
