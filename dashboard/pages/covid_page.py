@@ -10,7 +10,7 @@ def world_comparison():
     countries.insert(0, "Worldwide")
     options = st.sidebar.multiselect('Countries', countries)
 
-    col1, col2, col3, col4, col5, col6 = st.columns((1, 1, 1, 1, 0.2, 4))
+    col1, col2, col3, col4, col5, col6 = st.columns((0.7, 0.7, 0.7, 0.7, 0.2, 5))
     if options:
         data_total = get_result_total()
         if "Worldwide" in options:

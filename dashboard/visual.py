@@ -9,20 +9,20 @@ def visual_countries(option, data_table, data_countries_columns):
     columns_list = ["Country","confirmed", "deaths", "recovered"]
     for idx,column in enumerate(columns_list):
          with data_countries_columns[idx]:
-            st.markdown(f"<p style='text-align:center; background-color:{select_color(column)};'><b>{column.capitalize()}</b></h2>", unsafe_allow_html=True)
+            st.markdown(f"<p style='font-size:12px; text-align:center; background-color:{select_color(column)};'>{column.capitalize()}</h2>", unsafe_allow_html=True)
 
     for country in option:
         for idx,column in enumerate(columns_list):
             with data_countries_columns[idx]:
                 if data_countries_columns[idx] == 1:
-                    st.markdown(f"\n<h3 style='text-align:center; background-color:#A9A9A9;'><b>{country}</b></h3>", unsafe_allow_html=True)
+                    st.markdown(f"\n<p style='font-size:12px; text-align:center; background-color:#A9A9A9;'>{country}</p>", unsafe_allow_html=True)
                 else:
                     visual_occurrence(data_table, country, column)
 
 def visual_occurrence(data_table, country, column):
     for row in data_table:
         if row["Country"] == country:
-            st.markdown(f"<p style='text-align:center'><b>{row[column]}</b></p>", unsafe_allow_html=True)
+            st.markdown(f"<h5 style='font-weight:400; text-align:center'>{row[column]}</h5>", unsafe_allow_html=True)
 
 def select_color(column):
     if column == "Country": return "#F5CBA7 "

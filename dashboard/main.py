@@ -6,7 +6,7 @@ from pages.covid_page import world_comparison
 st.set_page_config(layout="wide")
 ################### TITLE 
 
-title_image = Image.open("dashboard/src/covid-19.png")
+title_image = Image.open("dashboard/src/Covid-19.png")
 st.image(title_image)
 
 ##################  BARRA LATERAL SELECCION DE PAGINA 
