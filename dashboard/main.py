@@ -2,7 +2,6 @@ import streamlit as st
 from PIL import Image
 from pages.covid_page import world_comparison
 
-
 st.set_page_config(layout="wide")
 ################### TITLE 
 

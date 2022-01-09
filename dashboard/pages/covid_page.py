@@ -1,6 +1,7 @@
-from api_requests import get_countries_names, get_result_total, get_geolocation, progression_total
-from visual import visual_countries, progression_total_graph
+from api_requests import get_countries_names, get_result_total, progression_total
+from visual import visual_countries, progression_total_graph, geolocation_map
 import streamlit as st
+import pandas as pd
 
 # SELECTOR DE PAIS
 
@@ -15,8 +16,10 @@ def world_comparison():
         data_total = get_result_total()
         if "Worldwide" in options:
             visual_countries(countries[1:], data_total, [col1, col2, col3, col4])
+            geolocation_map(countries[1:])
         else:
             visual_countries(options, data_total, [col1, col2, col3, col4])
+            geolocation_map(options)
         with col6:
             if options:
                 column_options = ["Confirmed", "Deaths", "Recovered"]
@@ -29,4 +32,7 @@ def world_comparison():
                     plt = progression_total_graph(progression_total(), options, column_option_selected)
                     st.pyplot(plt)
 
-   # SELECTOR DE TIPO DE DATO
+        
+
+
+

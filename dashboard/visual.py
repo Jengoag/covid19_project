@@ -2,6 +2,8 @@ from numpy.lib.function_base import cov
 import streamlit as st
 import matplotlib.pyplot as plt
 import pandas as pd
+from api_requests import get_geolocation
+
 
 plt.set_loglevel('WARNING')
 
@@ -33,11 +35,6 @@ def select_color(column):
 def get_difference(row):
     return  row["recovered"] - row["deaths"] 
 
-""" def geolocation_map(geospatial, start_location = None):
-    m = Map(start_location ,zoom_start=5)
-    for location in geospatial:
-        Marker(location=[location["Lat"], location["Long"]], tooltip=location["Name"]).add_to(m)
-    folium_static(m) """
 
 def progression_total_graph(progression_total, options, column_option_selected):
     column_option_selected_index = get_column_option_selected_index(column_option_selected)
@@ -64,3 +61,17 @@ def get_column_option_selected_index(column_option_selected):
     if column_option_selected == "Confirmed": return 1
     if column_option_selected == "Deaths": return 2
     if column_option_selected == "Recovered": return 3
+
+def geolocation_map(options):
+    all_geolocations = get_geolocation()
+    options_geolocation = []
+
+    for row in all_geolocations:
+        if row["Country"] in options:
+            options_geolocation.append(row)
+
+    df = pd.DataFrame(
+        options_geolocation,
+        columns=['lat', 'lon'])
+
+    st.map(df)  
