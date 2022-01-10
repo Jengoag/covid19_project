@@ -38,7 +38,9 @@ This project is part of the Big Data & Machine Learning Bootcamp.
 Here you can see the analysis of the Covid-19 data during the first year of the pandemic.
 </p>
 
-
+<p align="center"> 
+  <img src="Demo.png" alt="HAR Logo">
+</p>
 
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
 
